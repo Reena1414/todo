@@ -1,3 +1,6 @@
+var password="abc";
+var pwd=prompt("enter password");
+if(password==pwd){
 function get_todo(){
 	var todo=newArray;
 	var todo_str=localstorage.getItem('todo');
@@ -26,4 +29,8 @@ function show(){
 function remove(){
 	localstorage.removeItem('todo',JSON.stringfy(todo));
 show();
+}
+}
+else{
+	alert("wrong password");
 }
